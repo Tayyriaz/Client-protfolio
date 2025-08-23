@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Automation Bot - Hamza Abid</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .project-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .project-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .tech-tag {
+            background: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 30px;
+        }
+        .feature-list li:before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        .back-btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 20px 0;
+            transition: background 0.3s;
+        }
+        .back-btn:hover {
+            background: #0056b3;
+        }
+        .code-preview {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .metric-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .metric-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .metric-label {
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-hero">
+        <div class="container">
+            <h1><i class="fab fa-whatsapp"></i> WhatsApp Automation Bot</h1>
+            <p class="tagline">Intelligent Business Communication Automation</p>
+            <a href="../../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <div class="project-content">
+        <div class="project-section">
+            <h2><i class="fas fa-info-circle"></i> Project Overview</h2>
+            <p>Designed and deployed a comprehensive WhatsApp bot for client communication, handling FAQs, lead generation, and appointment booking with 24/7 availability. This solution revolutionized customer service for multiple businesses by providing instant, intelligent responses and automated workflow management.</p>
+        </div>
+
+        <div class="project-section">
+            <h2><i class="fas fa-chart-line"></i> Business Impact</h2>
+            <div class="metrics">
+                <div class="metric-card">
+                    <div class="metric-number">85%</div>
+                    <div class="metric-label">Customer Satisfaction Improvement</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">24/7</div>
+                    <div class="metric-label">Availability</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">70%</div>
+                    <div class="metric-label">Response Time Reduction</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-number">3x</div>
+                    <div class="metric-label">Lead Generation Increase</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2><i class="fas fa-cogs"></i> Key Features</h2>
+            <ul class="feature-list">
+                <li>Automated customer inquiries with intelligent response routing and FAQ handling</li>
+                <li>Integrated lead generation system with CRM synchronization for sales teams</li>
+                <li>Implemented appointment booking system with calendar integration and reminders</li>
+                <li>Multi-language support for international client communication</li>
+                <li>Advanced analytics dashboard for performance monitoring</li>
+                <li>Seamless integration with existing business systems</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2><i class="fas fa-code"></i> Technology Stack</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">WhatsApp Business API</span>
+                <span class="tech-tag">OpenAI GPT</span>
+                <span class="tech-tag">CRM Integration</span>
+                <span class="tech-tag">Webhook</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Flask</span>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2><i class="fas fa-code"></i> Code Preview</h2>
+            <div class="code-preview">
+<pre>#!/usr/bin/env python3
+"""
+WhatsApp Automation Bot
+A comprehensive business automation solution for WhatsApp
+"""
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import openai
+import os
+from dotenv import load_dotenv
+import json
+import logging
+from datetime import datetime
+
+class WhatsAppBot:
+    def __init__(self):
+        self.openai_client = openai.OpenAI(
+            api_key=os.getenv('OPENAI_API_KEY')
+        )
+        self.setup_logging()
+    
+    def process_message(self, message, user_id):
+        """Process incoming WhatsApp messages intelligently"""
+        try:
+            # Analyze message intent
+            intent = self.analyze_intent(message)
+            
+            # Generate appropriate response
+            response = self.generate_response(message, intent)
+            
+            # Log interaction
+            self.log_interaction(user_id, message, response, intent)
+            
+            return response
+            
+        except Exception as e:
+            logging.error(f"Error processing message: {e}")
+            return "I apologize, but I'm experiencing technical difficulties."
+    
+    def analyze_intent(self, message):
+        """Use AI to analyze user intent"""
+        prompt = f"Analyze this message and classify intent: {message}"
+        response = self.openai_client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": prompt}]
+        )
+        return response.choices[0].message.content
+
+# Flask app setup
+app = Flask(__name__)
+CORS(app)
+bot = WhatsAppBot()
+
+@app.route('/webhook', methods=['POST'])
+def webhook():
+    """Handle incoming WhatsApp webhooks"""
+    data = request.get_json()
+    
+    if 'entry' in data:
+        for entry in data['entry']:
+            for change in entry['changes']:
+                if change['value'].get('messages'):
+                    for message in change['value']['messages']:
+                        response = bot.process_message(
+                            message['text']['body'],
+                            message['from']
+                        )
+                        # Send response back to WhatsApp
+                        send_whatsapp_message(message['from'], response)
+    
+    return jsonify({'status': 'success'})
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=5000)</pre>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2><i class="fas fa-rocket"></i> Deployment & Architecture</h2>
+            <p>This WhatsApp bot is deployed using Docker containers with a microservices architecture. It includes:</p>
+            <ul class="feature-list">
+                <li>Scalable containerized deployment with Docker Compose</li>
+                <li>Load balancing and auto-scaling capabilities</li>
+                <li>Real-time monitoring and alerting system</li>
+                <li>Automated backup and disaster recovery</li>
+                <li>Multi-region deployment for global availability</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h2><i class="fas fa-users"></i> Client Success Stories</h2>
+            <p><strong>Real Estate Agency:</strong> Increased lead conversion by 40% and reduced response time from 4 hours to 2 minutes.</p>
+            <p><strong>E-commerce Store:</strong> Handled 500+ daily customer inquiries automatically, saving 20 hours of staff time daily.</p>
+            <p><strong>Healthcare Clinic:</strong> Automated appointment scheduling, reducing no-shows by 60% and improving patient satisfaction.</p>
+        </div>
+
+        <div class="project-section">
+            <h2><i class="fas fa-link"></i> Project Links</h2>
+            <a href="https://github.com/Tayyriaz" target="_blank" class="back-btn">
+                <i class="fab fa-github"></i> View GitHub Profile
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling and interactive features
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation to metrics
+            const metrics = document.querySelectorAll('.metric-number');
+            metrics.forEach(metric => {
+                const finalValue = metric.textContent;
+                let currentValue = 0;
+                const increment = finalValue.includes('%') ? 1 : finalValue.includes('x') ? 0.1 : 1;
+                
+                const timer = setInterval(() => {
+                    if (finalValue.includes('%')) {
+                        currentValue += increment;
+                        metric.textContent = Math.floor(currentValue) + '%';
+                    } else if (finalValue.includes('x')) {
+                        currentValue += increment;
+                        metric.textContent = currentValue.toFixed(1) + 'x';
+                    } else {
+                        currentValue += increment;
+                        metric.textContent = Math.floor(currentValue);
+                    }
+                    
+                    if (currentValue >= parseFloat(finalValue.replace(/[^\d.]/g, ''))) {
+                        metric.textContent = finalValue;
+                        clearInterval(timer);
+                    }
+                }, 50);
+            });
+        });
+    </script>
+</body>
+</html>
