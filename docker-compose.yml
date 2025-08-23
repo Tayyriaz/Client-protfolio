@@ -1,0 +1,150 @@
+version: '3.8'
+
+services:
+  # WhatsApp Automation Bot
+  whatsapp-bot:
+    build: ./projects/whatsapp-automation-bot
+    ports:
+      - "5000:5000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - WHATSAPP_API_KEY=${WHATSAPP_API_KEY}
+    volumes:
+      - ./projects/whatsapp-automation-bot:/app
+    networks:
+      - automation-network
+
+  # Email Automation Bot
+  email-bot:
+    build: ./projects/email-automation-bot
+    ports:
+      - "8001:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - EMAIL_SERVER=${EMAIL_SERVER}
+      - EMAIL_USERNAME=${EMAIL_USERNAME}
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD}
+    volumes:
+      - ./projects/email-automation-bot:/app
+    networks:
+      - automation-network
+
+  # Real Estate Automation Tool
+  real-estate-automation:
+    build: ./projects/real-estate-automation
+    ports:
+      - "8002:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - DATABASE_URL=${DATABASE_URL}
+    volumes:
+      - ./projects/real-estate-automation:/app
+    networks:
+      - automation-network
+
+  # n8n Workflow Automation
+  n8n-workflows:
+    build: ./projects/n8n-workflows
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=${N8N_USER}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_PASSWORD}
+    volumes:
+      - ./projects/n8n-workflows:/app
+      - n8n_data:/home/node/.n8n
+    networks:
+      - automation-network
+
+  # ElevenLabs Voice Bot
+  voice-bot:
+    build: ./projects/elevenlabs-voice-bot
+    ports:
+      - "8003:8000"
+    environment:
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - ./projects/elevenlabs-voice-bot:/app
+    networks:
+      - automation-network
+
+  # Xera Business Automation Bot
+  xera-bot:
+    build: ./projects/xera-business-bot
+    ports:
+      - "8004:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - DATABASE_URL=${DATABASE_URL}
+    volumes:
+      - ./projects/xera-business-bot:/app
+    networks:
+      - automation-network
+
+  # Redis for caching and message queuing
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - automation-network
+
+  # PostgreSQL for data storage
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=automation_db
+      - POSTGRES_USER=${DB_USER:-automation}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:-automation123}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - automation-network
+
+  # MongoDB for document storage
+  mongodb:
+    image: mongo:6
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_USER:-automation}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_PASSWORD:-automation123}
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - automation-network
+
+  # Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - whatsapp-bot
+      - email-bot
+      - real-estate-automation
+      - n8n-workflows
+      - voice-bot
+      - xera-bot
+    networks:
+      - automation-network
+
+volumes:
+  n8n_data:
+  redis_data:
+  postgres_data:
+  mongo_data:
+
+networks:
+  automation-network:
+    driver: bridge

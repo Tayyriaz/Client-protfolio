@@ -1,207 +1,131 @@
-# Hamza Abid - Professional Portfolio
+# Hamza Abid - Data Scientist & AI Engineer Portfolio
 
-A modern, professional portfolio website showcasing Hamza Abid's skills, experience, and projects in Data Science and AI Engineering.
+## 🚀 About
 
-## ✨ Features
+This is the professional portfolio website of **Hamza Abid**, a Data Science graduate with expertise in AI, Machine Learning, Computer Vision, and Generative AI. The portfolio showcases his projects, skills, and professional experience.
 
-### 🎨 **Modern Design**
-- **Professional Color Scheme**: Clean blues, whites, and cyan accents
-- **Responsive Layout**: Mobile-first design that works on all devices
-- **Smooth Animations**: CSS transitions, hover effects, and scroll animations
-- **Professional Typography**: Inter font family with proper hierarchy
+## 👨‍💻 Profile
 
-### 🚀 **Interactive Elements**
-- **Smooth Scrolling**: Navigation with smooth scroll behavior
-- **Active Navigation**: Highlights current section while scrolling
-- **Mobile Menu**: Hamburger menu for mobile devices
-- **Scroll to Top**: Button appears when scrolling down
-- **Typing Effect**: Animated hero title on page load
-- **Ripple Effects**: Interactive button animations
+- **Name:** Hamza Abid
+- **Title:** Data Scientist & AI Engineer
+- **Location:** Lahore, Pakistan
+- **Email:** abidhamza579@gmail.com
+- **Phone:** +92 303 456 8164
 
-### 📱 **User Experience**
-- **Responsive Design**: Optimized for all screen sizes
-- **Loading Animations**: Smooth transitions and reveal effects
-- **Hover Effects**: Interactive elements with visual feedback
-- **Parallax Scrolling**: Subtle depth effect on hero section
+## 🎓 Education
 
-## 🏗️ Sections
+- **Bachelor of Science in Data Science** (2021-2024)
+  - GIFT University, Gujranwala
+  - **Academic Achievements:**
+    - 1st Position in 1st, 3rd, and 6th semesters
+    - 2nd Position in Innovative 2.0 Final Year Project Competition among four different universities
 
-### **Hero Section**
-- Professional introduction with profile photo
-- Contact information (email, phone, location)
-- Call-to-action buttons (Download CV, GitHub, LinkedIn)
+- **FSC (Pre-Medical)** (2019-2021)
+  - KIPS College, Gujranwala
 
-### **About Me**
-- Personal background and achievements
-- Academic highlights and awards
-- Professional summary
+## 💼 Professional Experience
 
-### **Professional Experience**
-- Generative AI Internship at Kuality Soft
-- Detailed responsibilities and achievements
-- Timeline-based layout
+### Generative AI Intern
+**Kuality Soft, Gujranwala** | Sep 2024 — Dec 2024
 
-### **Featured Projects**
-- **Zero-Shot Multimodal Video Anomaly Detection** (Final Year Project)
-- **LLM-Based RAG Callbot** for inbound/outbound calls
-- **LLM-Based Customer Support Chatbot**
-- Technology stacks and key features
+- Developed and fine-tuned Large Language Models (LLMs) for domain-specific text generation using OpenAI API
+- Built AI-powered summarization pipelines to convert lengthy documents and datasets into concise, actionable insights
+- Designed prompt engineering strategies to improve model accuracy and relevance in responses
+- Integrated Generative AI capabilities into internal tools for automated content creation and report generation
 
-### **Skills & Expertise**
-- Programming Languages (Python, R, SQL, Java, PHP)
-- AI & ML Libraries (PyTorch, TensorFlow, Scikit-learn, OpenCV)
-- Tools & Platforms (Jupyter, Git, Docker, AWS, Power BI)
-- Domains (Machine Learning, Deep Learning, Computer Vision, NLP)
+## 🏆 Featured Projects
 
-### **Education**
-- Bachelor of Science in Data Science (GIFT University)
-- FSC Pre-Medical (KIPS College)
-- Academic achievements and honors
+### 1. Zero-Shot Multimodal Video Anomaly Detection
+**Final Year Project**
 
-### **Certifications**
-- IBM Exploratory Data Analysis for ML
-- Hugging Face Fundamentals of Agents & Development
+- Developed a training-free anomaly detection system combining visual, audio, and language cues using Vision-Language Models (VLMs), Audio-Language Models (ALMs), and Large Language Models (LLMs)
+- Designed caption alignment, filtering, and rationale evaluation for improved noise resilience
+- Achieved up to 3.66% accuracy improvement on benchmark datasets (UCF-Crime, XD-Violence, ShanghaiTech, UCSDped2)
+- Created cloud/web-based interface for real-time monitoring and alerting
 
-### **Contact**
-- Multiple contact methods
-- Social media links
-- Professional networking options
+**Technologies:** Python, PyTorch, TensorFlow, OpenCV, Docker, Google Colab
 
-## 🛠️ Technologies Used
+### 2. LLM-Based RAG Callbot
+**AI Application**
 
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Modern styling with CSS Grid, Flexbox, and animations
-- **JavaScript (ES6+)**: Interactive functionality and animations
-- **Font Awesome**: Professional icons
-- **Google Fonts**: Inter font family
-- **CSS Variables**: Consistent theming and easy customization
+- Designed and deployed a callbot leveraging Large Language Models (LLMs) with a Retrieval-Augmented Generation (RAG) pipeline for contextual and accurate responses
+- Integrated OpenAI APIs with Twilio Voice for real-time inbound and outbound calls
+- Implemented dynamic knowledge retrieval from custom databases and documents
+- Optimized for low-latency call handling and improved accuracy through prompt engineering
 
-## 📱 Responsive Design
+**Technologies:** Python, OpenAI API, Twilio, FastAPI, LangChain, PostgreSQL
 
-- **Mobile First**: Designed for mobile devices first
-- **Breakpoints**: Optimized for mobile, tablet, and desktop
-- **Touch Friendly**: Mobile-optimized interactions
-- **Performance**: Fast loading and smooth animations
+### 3. Basketball Detection Model
+**Computer Vision**
 
-## 🎯 Key Features
+- Developed a basketball detection model using YOLOv8 and converted it for mobile deployment across multiple platforms including TensorFlow Lite, ONNX, and Core ML
+- Trained custom YOLOv8 model for basketball detection in videos and images
+- Converted model to multiple mobile-friendly formats (TFLite, ONNX, Core ML)
+- Implemented cross-platform deployment for iOS, Android, and web applications
 
-### **Professional Appearance**
-- Clean, modern design that impresses potential employers
-- Professional color scheme with proper contrast
-- Consistent spacing and typography
-- Card-based layouts for easy scanning
+**Technologies:** Python, YOLOv8, TensorFlow, ONNX, Core ML, Computer Vision
 
-### **Interactive Elements**
-- Smooth hover effects and transitions
-- Scroll-triggered animations
-- Active navigation states
-- Mobile-friendly navigation
+## 🛠️ Skills & Expertise
 
-### **Content Organization**
-- Logical information hierarchy
-- Easy-to-scan sections
-- Prominent CV download options
-- Clear project presentations
+### Programming Languages
+- Python, R, SQL, Java, PHP
 
-## 🚀 Performance Features
+### AI & ML Libraries
+- PyTorch, TensorFlow, Scikit-learn, OpenCV, Matplotlib, Pandas, NumPy
 
-- **Optimized CSS**: Efficient selectors and minimal reflows
-- **Smooth Animations**: Hardware-accelerated transitions
-- **Lazy Loading**: Images load with fade-in effects
-- **Intersection Observer**: Efficient scroll animations
+### Tools & Platforms
+- Jupyter Notebook, Google Colab, Git, RStudio, LaTeX, Markdown, Docker, AWS, Power BI, Flask, n8n
 
-## 🌐 Browser Support
+### Domains
+- Machine Learning, Deep Learning, Computer Vision, NLP, Generative AI, Data Analysis
 
-- **Modern Browsers**: Chrome, Firefox, Safari, Edge
-- **Mobile Browsers**: iOS Safari, Chrome Mobile
-- **Progressive Enhancement**: Works without JavaScript
-- **Accessibility**: ARIA labels and semantic HTML
+## 📜 Certifications
 
-## 📁 File Structure
+- **Exploratory Data Analysis for ML** - IBM (June 2025)
+- **Fundamentals of Agents & Development** - Hugging Face Agent Course (August 2025)
 
-```
-Hamza/
-├── index.html          # Main portfolio page
-├── styles.css          # Modern CSS styling
-├── script.js           # Interactive JavaScript
-├── README.md           # Documentation
-├── Hamza_cv (2).pdf   # Downloadable CV
-└── Hamza_1)cro.jpg    # Profile photo
-```
+## 🔗 Links
 
-## 🎨 Customization
+- **GitHub:** [github.com/HamzaGujjar579](https://github.com/HamzaGujjar579)
+- **LinkedIn:** [linkedin.com/in/hamza-abid-361304303](https://www.linkedin.com/in/hamza-abid-361304303/)
+- **Email:** abidhamza579@gmail.com
 
-### **Colors**
-- Primary: Professional blue (#2563eb)
-- Accent: Cyan (#06b6d4)
-- Background: Clean whites and light grays
-- Text: Dark grays for readability
+## 🚀 Getting Started
 
-### **Layout**
-- CSS Grid and Flexbox for modern layouts
-- Consistent spacing using CSS custom properties
-- Responsive breakpoints for all devices
-- Card-based design for content organization
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Tayyriaz/Client-protfolio.git
+   ```
 
-## 📱 Mobile Features
+2. Open `index.html` in your web browser to view the portfolio
 
-- **Hamburger Menu**: Collapsible navigation
-- **Touch Optimized**: Proper touch targets
-- **Responsive Images**: Optimized for mobile viewing
-- **Mobile-First CSS**: Built for mobile performance
+3. The portfolio includes:
+   - Responsive design for all devices
+   - Interactive sections for projects, skills, and experience
+   - Downloadable CV
+   - Contact information and social links
 
-## 🔧 Setup & Deployment
+## 📱 Features
 
-### **Local Development**
-1. Clone or download the files
-2. Open `index.html` in a web browser
-3. All assets are local, no external dependencies
+- **Responsive Design:** Optimized for desktop, tablet, and mobile devices
+- **Modern UI/UX:** Clean, professional design with smooth animations
+- **Interactive Elements:** Smooth scrolling navigation and interactive project cards
+- **Downloadable CV:** Direct access to professional resume
+- **Social Integration:** Links to professional profiles and contact information
 
-### **Deployment Options**
-- **GitHub Pages**: Free hosting for portfolios
-- **Netlify**: Easy deployment with drag & drop
-- **Vercel**: Fast deployment for static sites
-- **Any Web Server**: Traditional hosting
+## 🎨 Technologies Used
 
-## 📊 Portfolio Highlights
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Icons:** Font Awesome
+- **Fonts:** Inter (Google Fonts)
+- **Design:** Custom CSS with modern design principles
 
-### **Professional Skills**
-- **Data Science**: Python, R, SQL, Machine Learning
-- **AI & ML**: PyTorch, TensorFlow, Computer Vision, NLP
-- **Tools**: Docker, AWS, Power BI, Jupyter, Git
-- **Domains**: Deep Learning, Generative AI, Data Analysis
+## 📄 License
 
-### **Key Projects**
-- **FYP**: Zero-Shot Multimodal Video Anomaly Detection
-- **AI Applications**: LLM-based callbot and chatbot
-- **Technologies**: Modern AI/ML stack with cloud deployment
-
-### **Academic Excellence**
-- **1st Position**: Multiple semesters at GIFT University
-- **2nd Position**: Innovative 2.0 Final Year Project Competition
-- **Certifications**: IBM and Hugging Face courses
-
-## 📞 Contact Information
-
-- **Email**: abidhamza579@gmail.com
-- **Phone**: +92 303 456 8164
-- **Location**: Lahore, Pakistan
-- **GitHub**: [github.com/HamzaGujjar579](https://github.com/HamzaGujjar579)
-- **LinkedIn**: [linkedin.com/in/hamza-abid-361304303/](https://www.linkedin.com/in/hamza-abid-361304303/)
-
-## 📄 CV Download
-
-The portfolio includes multiple prominent CV download buttons that link to `Hamza_cv (2).pdf`, making it easy for potential employers to access Hamza's detailed credentials.
-
-## 🎯 Target Audience
-
-- **Hiring Managers**: Data Science and AI roles
-- **Recruiters**: Tech industry professionals
-- **Collaborators**: Research and development partners
-- **Networking**: Professional connections in AI/ML field
+This project is for personal portfolio use. All rights reserved by Hamza Abid.
 
 ---
 
-**Built with modern web technologies for a professional, engaging user experience that showcases Hamza's skills and achievements effectively.**
+*Last updated: December 2024*
 
 

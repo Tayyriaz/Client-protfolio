@@ -1,0 +1,36 @@
+{
+  "name": "n8n-workflows",
+  "version": "1.0.0",
+  "description": "Business automation workflows using n8n platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "n8n start",
+    "dev": "n8n start --tunnel",
+    "build": "n8n build",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "n8n",
+    "workflow",
+    "automation",
+    "business",
+    "integration"
+  ],
+  "author": "Hamza Abid",
+  "license": "MIT",
+  "dependencies": {
+    "n8n": "^1.28.0",
+    "axios": "^1.6.0",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "eslint": "^8.54.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

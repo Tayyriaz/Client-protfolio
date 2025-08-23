@@ -1,0 +1,39 @@
+{
+  "name": "xera-business-automation-bot",
+  "version": "1.0.0",
+  "description": "Comprehensive business automation bot for repetitive tasks",
+  "main": "index.js",
+  "scripts": {
+    "start": "python manage.py runserver",
+    "build": "python manage.py collectstatic",
+    "test": "python manage.py test",
+    "migrate": "python manage.py migrate",
+    "makemigrations": "python manage.py makemigrations",
+    "dev": "python manage.py runserver 0.0.0.0:8000"
+  },
+  "keywords": [
+    "automation",
+    "business",
+    "django",
+    "python",
+    "rpa",
+    "productivity"
+  ],
+  "author": "Hamza Abid",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
