@@ -18,7 +18,7 @@ This is the professional portfolio website of **Hamza Abid**, a Data Science gra
   - GIFT University, Gujranwala
   - **Academic Achievements:**
     - 1st Position in 1st, 3rd, and 6th semesters
-    - 2nd Position in Innovative 2.0 Final Year Project Competition among four different universities
+    - 1st Position in Innovative 2.0 Final Year Project Competition among four different universities
 
 - **FSC (Pre-Medical)** (2019-2021)
   - KIPS College, Gujranwala
