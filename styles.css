@@ -483,6 +483,12 @@ body {
   font-size: 1.4rem;
   color: var(--text-primary);
   margin-bottom: 0.5rem;
+  transition: var(--transition);
+}
+
+.project-header h3:hover {
+  color: var(--primary);
+  transform: translateX(5px);
 }
 
 .project-type {
